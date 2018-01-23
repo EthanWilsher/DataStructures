@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3917702C201791C000FBA50B /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3917702B201791C000FBA50B /* Runner.cpp */; };
+		3917702F201791F100FBA50B /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3917702D201791F100FBA50B /* Controller.cpp */; };
 		39F8AF542017898A007EBD58 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39F8AF532017898A007EBD58 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3917702B201791C000FBA50B /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		3917702D201791F100FBA50B /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		3917702E201791F100FBA50B /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		39F8AF502017898A007EBD58 /* FirstCPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstCPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F8AF532017898A007EBD58 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3917702A201791AA00FBA50B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3917702B201791C000FBA50B /* Runner.cpp */,
+				3917702D201791F100FBA50B /* Controller.cpp */,
+				3917702E201791F100FBA50B /* Controller.hpp */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		39F8AF472017898A007EBD58 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +72,7 @@
 		39F8AF522017898A007EBD58 /* FirstCPlusPlus */ = {
 			isa = PBXGroup;
 			children = (
+				3917702A201791AA00FBA50B /* Controller */,
 				39F8AF532017898A007EBD58 /* main.cpp */,
 			);
 			path = FirstCPlusPlus;
@@ -120,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F8AF542017898A007EBD58 /* main.cpp in Sources */,
+				3917702F201791F100FBA50B /* Controller.cpp in Sources */,
+				3917702C201791C000FBA50B /* Runner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
