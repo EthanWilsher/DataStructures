@@ -7,3 +7,12 @@
 //
 
 #include <stdio.h>
+#include "Controller.hpp"
+
+int main()
+{
+    Controller app;
+    app.start();
+    
+    return 0;
+}
