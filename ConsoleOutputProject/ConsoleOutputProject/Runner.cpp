@@ -1,6 +1,6 @@
 //
 //  Runner.cpp
-//  QuickProject
+//  ConsoleOutputProject
 //
 //  Created by Wilsher, Ethan on 1/25/18.
 //  Copyright © 2018 Wilsher, Ethan. All rights reserved.
@@ -14,7 +14,6 @@ int main()
     Controller * app = new Controller();
     
     (*app).start();
-    
     app->start();
     
     return 0;

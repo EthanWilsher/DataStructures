@@ -10,6 +10,8 @@
 
 using namespace std;
 
+int score [4] = { 1, 3, 5, 20};
+
 Controller ::  Controller()
 {
     
