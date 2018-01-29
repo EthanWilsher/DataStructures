@@ -11,16 +11,8 @@
 using namespace std;
 
 int looped = 13;
-
-string * sPtr;
-
 string name = "Ethan Wilsher";
-
-
-
-
-
-
+string * sPtr = &name;
 
 Controller :: Controller()
 {
