@@ -9,6 +9,20 @@
 #ifndef FileController_hpp
 #define FileController_hpp
 
-#include <stdio.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
+#include "../Data/CrimeData.hpp"
+
+using namespace std;
+
+class FileController
+{
+public:
+    static vector<CrimeData> readCrimeDataToVector(string filename);
+};
 
 #endif /* FileController_hpp */
