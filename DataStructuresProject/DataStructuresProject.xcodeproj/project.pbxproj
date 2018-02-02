@@ -38,6 +38,7 @@
 		394EE145202222DD00C3C0BA /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crime.csv; path = DataStructuresProject/Data/crime.csv; sourceTree = SOURCE_ROOT; };
 		394EE146202222DD00C3C0BA /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = DataStructuresProject/Data/CrimeData.hpp; sourceTree = SOURCE_ROOT; };
 		394EE147202222DD00C3C0BA /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = DataStructuresProject/Data/CrimeData.cpp; sourceTree = SOURCE_ROOT; };
+		39F29D4B2024BFF1003775FE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		394EE13120220C6900C3C0BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				39F29D472024BF9B003775FE /* Model */,
 				394EE1442022229F00C3C0BA /* Data */,
 				394EE13320220CC200C3C0BA /* FileController.cpp */,
 				394EE13420220CC200C3C0BA /* FileController.hpp */,
@@ -114,6 +116,30 @@
 				394EE146202222DD00C3C0BA /* CrimeData.hpp */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		39F29D472024BF9B003775FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39F29D492024BFB9003775FE /* Nodes */,
+				39F29D482024BFAA003775FE /* Structures */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39F29D482024BFAA003775FE /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				39F29D4B2024BFF1003775FE /* Array.hpp */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		39F29D492024BFB9003775FE /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
