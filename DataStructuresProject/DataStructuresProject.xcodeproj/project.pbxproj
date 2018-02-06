@@ -76,6 +76,8 @@
 			children = (
 				3998DFFC2029FFB600669ACD /* Testers */,
 				394EE13920220CDD00C3C0BA /* Runner.cpp */,
+				394EE1442022229F00C3C0BA /* Data */,
+				39F29D472024BF9B003775FE /* Model */,
 				394EE13120220C6900C3C0BA /* Controller */,
 				394EE12F20220C5800C3C0BA /* Diagrams */,
 			);
@@ -92,8 +94,6 @@
 		394EE13120220C6900C3C0BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				39F29D472024BF9B003775FE /* Model */,
-				394EE1442022229F00C3C0BA /* Data */,
 				394EE13320220CC200C3C0BA /* FileController.cpp */,
 				394EE13420220CC200C3C0BA /* FileController.hpp */,
 				394EE13620220CCE00C3C0BA /* Controller.cpp */,
@@ -119,7 +119,8 @@
 				394EE147202222DD00C3C0BA /* CrimeData.cpp */,
 				394EE146202222DD00C3C0BA /* CrimeData.hpp */,
 			);
-			path = Data;
+			name = Data;
+			path = Controller/Data;
 			sourceTree = "<group>";
 		};
 		3998DFFC2029FFB600669ACD /* Testers */ = {
