@@ -30,10 +30,12 @@ public:
     //destructor
     ~Array<Type>();
     
+    //operators
     Array<Type> & operator = (const Array<Type> & toReplace);
     Type& operator [] (int index);
     Type operator [] (int index) const;
     
+    //Methods
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
@@ -122,9 +124,11 @@ Type Array<Type> :: getFromIndex(int index)
 template <class Type>
 void Array<Type> :: setAtIndex(int pos, Type item)
 {
-    assert(pos >= 0 pos < size);
+    assert(pos >= 0 && pos < size);
     internalArray[pos] = item;
-}
+    
+}a
+
 
 
 
