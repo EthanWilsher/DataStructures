@@ -12,18 +12,22 @@ using namespace std;
 
 void Controller :: start()
 {
-    cout << "Testing the timer class" << endl;
-    Timer codeTimer;
-    codeTimer.startTimer();
-    cout << "print to screen" << endl;
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ewil1026/Documents/DataStructures/DataStructuresProject/DataStructuresProject/Data/CrimeData.cpp");
-    for ( int loop = 0; loop < 30; loop++)
-    {
-        cout << "spot #" << loop << ": " << myData[loop] << endl;
-    }
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
     
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
+//    cout << "Testing the timer class" << endl;
+//    Timer codeTimer;
+//    codeTimer.startTimer();
+//    cout << "print to screen" << endl;
+//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ewil1026/Documents/DataStructures/DataStructuresProject/DataStructuresProject/Data/CrimeData.cpp");
+//    for ( int loop = 0; loop < 30; loop++)
+//    {
+//        cout << "spot #" << loop << ": " << myData[loop] << endl;
+//    }
+//
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
 }
 
 

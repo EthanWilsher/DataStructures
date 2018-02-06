@@ -16,6 +16,8 @@
 #include <iostream>
 #include <vector>
 
+#include "../Testers/ArrayTester.hpp"
+
 class Controller
 {
 private:
