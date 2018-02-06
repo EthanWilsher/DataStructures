@@ -41,6 +41,7 @@
 		394EE147202222DD00C3C0BA /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = DataStructuresProject/Data/CrimeData.cpp; sourceTree = SOURCE_ROOT; };
 		3998DFFD202A001700669ACD /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		3998DFFE202A001700669ACD /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
+		3998E003202A10EA00669ACD /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		39F29D4B2024BFF1003775FE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +153,7 @@
 		39F29D492024BFB9003775FE /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				3998E003202A10EA00669ACD /* Node.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
