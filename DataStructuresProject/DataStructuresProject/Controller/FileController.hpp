@@ -16,6 +16,7 @@
 #include <fstream>
 
 #include "../Data/CrimeData.hpp"
+#include "Array.hpp"
 
 using namespace std;
 

@@ -21,10 +21,13 @@ private:
     Type * internalArray;
     int size;
 public:
+    //constructor
     Array<Type>(int size);
     
+    //copy constructor
     Array<Type>(const Array<Type> & toCopy);
     
+    //destructor
     ~Array<Type>();
     
     Array<Type> & operator = (const Array<Type> & toReplace);
@@ -34,7 +37,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 
 template <class Type>
 Array<Type> :: Array(int size)
