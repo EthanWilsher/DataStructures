@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>570</y>
+      <w>440</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Node Class
+-
+
+#data : Type
+
+-
+
++Node() : constructor 
++Node(Type Data) : constructor
++setData(TypeData) : void
++getData() : Type</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>950</x>
+      <y>170</y>
+      <w>480</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>LinearNode&lt;Type&gt;
+-
+-LinearNode&lt;Type&gt;*:next
+-
++LinearNode() : constructor
++LinearNode(Type data) : constructor
++LinearNode(Type data, LinearNode&lt;Type&gt; * next) : constructor
+
++setNextNode(LinearNode&lt;Type&gt; *) : void
++getNextNode() : LinearNode&lt;Type&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>390</y>
+      <w>80</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>100</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>List&lt;Type&gt;
+-
+# size : int
+-
+/+add(Type item) : void/
+/+addAtIndex(int Index, Type item) : void/
+/+remove(Type item) : Type/
+/+getFromIndex(int index) : Type/
+
+/+getSize() const : int/
+/+getFront() : LinearNode&lt;Type&gt; */
+/+getEnd() : LinearNode&lt;Type&gt; */</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>170</y>
+      <w>410</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;390.0;60.0</additional_attributes>
+  </element>
+</diagram>

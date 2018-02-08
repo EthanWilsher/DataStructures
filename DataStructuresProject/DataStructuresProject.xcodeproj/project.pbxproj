@@ -39,6 +39,7 @@
 		394EE145202222DD00C3C0BA /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crime.csv; path = DataStructuresProject/Data/crime.csv; sourceTree = SOURCE_ROOT; };
 		394EE146202222DD00C3C0BA /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = DataStructuresProject/Data/CrimeData.hpp; sourceTree = SOURCE_ROOT; };
 		394EE147202222DD00C3C0BA /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = DataStructuresProject/Data/CrimeData.cpp; sourceTree = SOURCE_ROOT; };
+		3973CDF4202CAFD9004034AC /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		3998DFFD202A001700669ACD /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		3998DFFE202A001700669ACD /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		3998E003202A10EA00669ACD /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				3998E003202A10EA00669ACD /* Node.hpp */,
+				3973CDF4202CAFD9004034AC /* LinearNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
