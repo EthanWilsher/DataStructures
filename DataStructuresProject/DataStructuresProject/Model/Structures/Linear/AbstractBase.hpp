@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <assert.h>
-#include "../Nodes/LinearNode.hpp"
+#include "LinearNode.hpp"
 
 template <class Type>
 class AbstractBase : public Node<Type>

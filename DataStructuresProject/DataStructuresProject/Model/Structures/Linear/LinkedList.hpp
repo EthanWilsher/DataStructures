@@ -36,7 +36,7 @@ public:
     virtual Type getFromIndex(int index);
     virtual Type remove(int index);
     
-}
+};
 
 LinkedList<Type> :: LinkedList()
 {
