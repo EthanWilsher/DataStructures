@@ -46,6 +46,7 @@
 		3998DFFE202A001700669ACD /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		3998E003202A10EA00669ACD /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		39A9E8E4203C701500435603 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		39AF639920446B6000F05926 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		39F29D4B2024BFF1003775FE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +180,7 @@
 			children = (
 				3998E003202A10EA00669ACD /* Node.hpp */,
 				3973CDF4202CAFD9004034AC /* LinearNode.hpp */,
+				39AF639920446B6000F05926 /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
