@@ -47,6 +47,7 @@
 		3998E003202A10EA00669ACD /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		39A9E8E4203C701500435603 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		39AF639920446B6000F05926 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		39AF639C20446F0B00F05926 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		39F29D4B2024BFF1003775FE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +138,7 @@
 				3990E236203F15F8003A4FC9 /* Stack.hpp */,
 				3973CDF7202CB44B004034AC /* AbstractBase.hpp */,
 				39F29D4B2024BFF1003775FE /* Array.hpp */,
+				39AF639C20446F0B00F05926 /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
