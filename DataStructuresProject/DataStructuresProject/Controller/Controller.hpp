@@ -17,6 +17,10 @@
 #include <vector>
 
 #include "../Testers/ArrayTester.hpp"
+#include "../Model/Structures/Linear/Array.hpp"
+#include "../Testers/LinkedListTester.hpp"
+#include "../Testers/TestingStacksAndQueues.hpp"
+#include "../Testers/RecursionTester.hpp"
 
 class Controller
 {

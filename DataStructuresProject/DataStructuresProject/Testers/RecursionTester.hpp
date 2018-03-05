@@ -20,6 +20,7 @@ class RecursionTester
 private:
     int fib(int start);
     string mystery(string word);
+    int test(int number);
 public:
     void testRecursionNumbers();
     void testRecursionString();

@@ -12,22 +12,10 @@ using namespace std;
 
 void Controller :: start()
 {
-    ArrayTester myTest;
-    myTest.testArrayUse();
-    myTest.testAdvancedArray();
+
     
-//    cout << "Testing the timer class" << endl;
-//    Timer codeTimer;
-//    codeTimer.startTimer();
-//    cout << "print to screen" << endl;
-//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ewil1026/Documents/DataStructures/DataStructuresProject/DataStructuresProject/Data/CrimeData.cpp");
-//    for ( int loop = 0; loop < 30; loop++)
-//    {
-//        cout << "spot #" << loop << ": " << myData[loop] << endl;
-//    }
-//
-//    codeTimer.stopTimer();
-//    codeTimer.displayInformation();
+    RecursionTester test;
+    test.testRecursionNumbers();
 }
 
 

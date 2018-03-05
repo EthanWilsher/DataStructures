@@ -23,6 +23,20 @@ int RecursionTester :: fib(int number)
     }
 }
 
+int RecursionTester :: test(int number)
+{
+    if (number == 10 || number == 50)
+    {
+        cout << "reached a base case" <<endl;
+        return 1;
+    }
+    else
+    {
+        cout << "calling test with" << number - 1 << " and " << number - 2 << endl;
+        return test (number -1) + test (number - 2);
+    }
+}
+
 string RecursionTester :: mystery(string word)
 {
     return "";
@@ -30,7 +44,12 @@ string RecursionTester :: mystery(string word)
 
 void RecursionTester :: testRecursionNumbers()
 {
-
+    Timer recursionTimer;
+    cout << "Testing fibonnaci with 10" << endl;
+    recursionTimer.startTimer();
+    cout << fib(10) << endl;
+    recursionTimer.stopTimer();
+    recursionTimer.displayInformation();
 }
 
 void RecursionTester :: testRecursionString()
