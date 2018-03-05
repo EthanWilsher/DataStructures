@@ -13,11 +13,12 @@
 #include <assert.h>
 #include "AbstractBase.hpp"
 #include "LinearNode.hpp"
+#include "Node.hpp"
 
 using namespace std;
 
 template <class Type>
-class LinkedList : public List<Type>
+class LinkedList : public AbstractBase<Type>
 {
 protected:
     LinearNode<Type> * front;
