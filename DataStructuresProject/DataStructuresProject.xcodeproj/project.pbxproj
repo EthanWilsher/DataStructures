@@ -15,6 +15,7 @@
 		39552D3B204D90120017C9CF /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39552D39204D90120017C9CF /* RecursionTester.cpp */; };
 		3970C513205AB445008842C5 /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3970C511205AB445008842C5 /* SortingTester.cpp */; };
 		39A44B3A20470F0600211D53 /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39A44B3820470F0600211D53 /* TestingStacksAndQueues.cpp */; };
+		39BC4B002060024D005992F7 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39BC4AFE2060024D005992F7 /* Graph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,8 @@
 		39A9E8E4203C701500435603 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		39AF639920446B6000F05926 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		39AF639C20446F0B00F05926 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
+		39BC4AFE2060024D005992F7 /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		39BC4AFF2060024D005992F7 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		39F29D4B2024BFF1003775FE /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +158,8 @@
 		3990E234203F15C1003A4FC9 /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				39BC4AFE2060024D005992F7 /* Graph.cpp */,
+				39BC4AFF2060024D005992F7 /* Graph.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				394EE13A20220CDD00C3C0BA /* Runner.cpp in Sources */,
+				39BC4B002060024D005992F7 /* Graph.cpp in Sources */,
 				39A44B3A20470F0600211D53 /* TestingStacksAndQueues.cpp in Sources */,
 				394EE148202222DD00C3C0BA /* CrimeData.cpp in Sources */,
 				394EE13520220CC200C3C0BA /* FileController.cpp in Sources */,

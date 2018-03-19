@@ -13,9 +13,7 @@
 #include <assert.h>
 #include "AbstractBase.hpp"
 #include "LinearNode.hpp"
-#include "Node.hpp"
 
-using namespace std;
 
 template <class Type>
 class LinkedList : public AbstractBase<Type>
@@ -39,6 +37,7 @@ public:
     
 };
 
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
@@ -46,6 +45,7 @@ LinkedList<Type> :: LinkedList()
     this->size = 0;
 }
 
+template <class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
@@ -58,6 +58,7 @@ LinkedList<Type> :: ~LinkedList()
     
 }
 
+template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -72,10 +73,12 @@ void LinkedList<Type> :: add(Type item)
     }
     
     this->end = newData;
+    
     this->size += 1;
 
 }
 
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this->size);
@@ -103,12 +106,13 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
             previous->setNextNode(toBeAdded);
             toBeAdded->setNextNode(current);
         }
-        this->size++
+        this->size++;
         
     }
         
 }
 
+template <class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -127,6 +131,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
         
 }
 
+template <class Type>
 Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -169,16 +174,19 @@ Type LinkedList<Type> :: remove(int index)
     return removedData;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
 
+template <class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this->size;

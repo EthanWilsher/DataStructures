@@ -10,6 +10,11 @@
 #define TestingStacksAndQueues_hpp
 
 #include <iostream>
+#include "../Controller/Tools/Timer.hpp"
+#include "../Controller/FileController.hpp"
+#include "../Model/Structures/Linear/Stack.hpp"
+#include "../Model/Structures/Linear/AbstractBase.hpp"
+#include "../Model/Structures/Linear/Queue.hpp"
 
 class TestingStacksAndQueues
 {
@@ -20,3 +25,4 @@ public:
 };
 
 #endif /* TestingStacksAndQueues_hpp */
+

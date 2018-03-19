@@ -9,6 +9,7 @@
 #include "LinkedList.hpp"
 #include "Timer.hpp"
 #include "TestingStacksAndQueues.hpp"
+#include "CrimeData.hpp"
 
 using namespace std;
 

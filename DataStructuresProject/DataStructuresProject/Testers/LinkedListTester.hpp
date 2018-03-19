@@ -9,7 +9,7 @@
 #ifndef LinkedListTester_hpp
 #define LinkedListTester_hpp
 
-#include "../Model/Structure/Linear/LinkedList.hpp"
+#include "../Model/Structures/Linear/LinkedList.hpp"
 #include "../Controller/FileController.hpp"
 #include "../Controller/Tools/Timer.hpp"
 #include "../Data/CrimeData.hpp"
@@ -21,7 +21,7 @@ class LinkedListTester
 public:
     void testListBasics();
     void testListWithData();
-}
+};
 
 void LinkedListTester :: testListBasics()
 {
@@ -31,8 +31,8 @@ void LinkedListTester :: testListBasics()
     cout << numbers.getEnd()->getData() << " is it at the end of the list and should be 9" << endl;
     
     numbers.add(0);
-    cout << numbers.getFront->getData() << " is it at the front of the list and should be 9" << endl;
-    cout << numbers.getEnd->getData() << "is it at the end of the list and should be 0" << endl;
+    cout << numbers.getFront()->getData() << " is it at the front of the list and should be 9" << endl;
+    cout << numbers.getEnd()->getData() << "is it at the end of the list and should be 0" << endl;
     
     numbers.addAtIndex(1,2);
     numbers.add(324);

@@ -12,7 +12,7 @@
 #include <iostream>
 #include "LinkedList.hpp"
 
-using namespace std
+using namespace std;
 template <class Type>
 class Queue : public LinkedList<Type>
 {
@@ -43,7 +43,7 @@ Queue<Type> :: ~Queue()
 {
     for(LinearNode<Type> * removed = this->front; removed != nullptr; removed = this->front)
     {
-        this->front = removed->getNextNode()
+        this->front = removed->getNextNode();
         delete removed;
     }
 }
@@ -96,7 +96,7 @@ template <class Type>
 Type Queue<Type> :: remove(int index)
 {
     assert(index == 0);
-    return dequeque();
+    return dequeue();
     
 }
 
