@@ -72,6 +72,10 @@ void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
 }
 
 template <class Type>
+void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left)
+{
+    this->left = left;
+}
 
 
 #endif /* BinaryTree_hpp */
