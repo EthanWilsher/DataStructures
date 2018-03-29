@@ -37,6 +37,34 @@ public:
     
     BinarySearchTree();
     ~BinarySearchTree();
+    
+    BinaryTreeNode<Type> * getRoot();
+    void setRoot(BinaryTreeNode<Type> * root);
+    
+    void inOrderTraversal();
+    void preOrderTraversal();
+    void postOrderTraversal();
+    void demoTraversalSteps(BinaryTreeNode<Type> * node);
+    
+    int getSize();
+    int getHeight();
+    bool isComplete();
+    bool isBalanced();
+    
+    bool contains(Type value);
+    void insert(Type itemToInsert);
+    void remove(Type value);
+    
+    Type findMinimum();
+    Type findMaximum();
 };
+
+template <class Type>
+BinarySearchTree<Type> :: BinarySearchTree()
+{
+    this->root = nullptr;
+}
+
+template <class Type>
 
 #endif /* BinarySearchTree_hpp */
