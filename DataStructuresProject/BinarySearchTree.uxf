@@ -45,7 +45,9 @@ Recursive Traversal Helpers
 # preOrderTraversal(BinaryTreeNode&lt;Type&gt; * preStart) : void
 # postOrderTraversal(BinaryTreeNode&lt;Type&gt; * postStart) : void
 # getRightMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
-# getLeftMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *</panel_attributes>
+# getLeftMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
+
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

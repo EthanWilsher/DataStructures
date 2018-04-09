@@ -111,7 +111,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
-    
+    preOrderTraversal(this->root);
     
 }
 
@@ -182,5 +182,8 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
         inOrderTraversal(inStart->getRightNode());
     }
 }
+
+template <class Type>
+
 
 #endif /* BinarySearchTree_hpp */
