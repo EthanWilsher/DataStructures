@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		390FA94E20863A7500E15568 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		394EE12520220B7F00C3C0BA /* DataStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		394EE13320220CC200C3C0BA /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		394EE13420220CC200C3C0BA /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				39BC4AFF2060024D005992F7 /* Graph.hpp */,
+				390FA94E20863A7500E15568 /* AVLTree.hpp */,
 				39C5603C206A8D670014C742 /* BinaryTree.hpp */,
 				39B16E39206D296B002C4252 /* BinarySearchTree.hpp */,
 			);
