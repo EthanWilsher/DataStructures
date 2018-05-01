@@ -52,13 +52,37 @@ Hashtable<Type> :: ~Hashtable()
 template <class Type>
 bool Hashtable<Type> :: isPrime(long current)
 {
-    return false;
+    if(candidateNumber <= 1)
+    {
+        return false;
+    }
+    else if(current == 2 || current == 3)
+    {
+        return true;
+    }
+    else if(current % 2 == 0)
+    {
+        return false;
+    }
+    else
+    {
+        for(int next = 3; next <= sqrt(current) + 1; next += 2)
+        {
+            if(current % next == 0)
+                
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }
 
 template <class Type>
 long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
-    return -1;
+    long insertPosition = insert->getKey() % this->capacity;
+    return insertPosition;
 }
 
 template <class Type>
@@ -76,7 +100,15 @@ long Hashtable<Type> :: getSize()
 template <class Type>
 long Hashtable<Type> :: getNextPrime()
 {
-    return -1;
+    long nextPrime = (this->capacity * 2) + 1;
+    
+    while(!isPrime(nextPrime))
+    {
+        
+        nextPrime += 2;
+    }
+    
+    return nextPrime;
 }
 
 template <class Type>
