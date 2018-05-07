@@ -10,6 +10,8 @@
 #define HashTable_hpp
 
 #include "HashNode.hpp"
+#include <cmath>
+#include <assert.h>
 
 template <class Type>
 class Hashtable
@@ -25,13 +27,14 @@ private:
     long capacity;
     long handleCollision(HashNode<Type> * insertedNode, long index);
 public:
-    
-    
     Hashtable();
     ~Hashtable();
     
     void insert(Type data);
     long getSize();
+    
+    HashNode<Type> * get(long index);
+    bool contains(HashNode<Type> * value);
 };
 
 template <class Type>
@@ -92,6 +95,31 @@ long Hashtable<Type> :: handleCollision(HashNode<Type> *, long index)
 }
 
 template <class Type>
+HashNode<Type> * Hashtable<Type> :: get(long index)
+{
+    assert(index < capacity);
+    return internalStorage[index];
+    
+}
+
+template <class Type>
+bool Hashtable<Type> :: contains(HashNode<Type> * value)
+{
+    if (internalStorage[findPosition(value)]->getData() == value->getData())
+    {
+        return true;
+    }
+    
+    long other = handleCollision(findPosition(value));
+    if (internalStorage[other]->getData() == value->getData())
+    {
+        return true;
+    }
+    
+    return false;
+}
+
+template <class Type>
 long Hashtable<Type> :: getSize()
 {
     return -1;
@@ -109,6 +137,31 @@ long Hashtable<Type> :: getNextPrime()
     }
     
     return nextPrime;
+}
+
+template <classType>
+void Hashtable<Type> :: insert(Type value)
+{
+    this->size++;
+    if(((this->size * 1.000) / this->capacity) > this->loadFactor)
+    {
+        resize();
+    }
+    
+    HashNode<Type> * temp = new HashNode<Type>(value);
+    long index = findPosition(temp);
+    if(internalStorage[index] == nullptr)
+    {
+        internalStorage[index] = temp;
+    }
+    else
+    {
+        long updatedPosition = handleCollision(index);
+        if (updatedPosition != -1)
+        {
+            internalStorage[updatedPosition] = temp;
+        }
+    }
 }
 
 template <class Type>

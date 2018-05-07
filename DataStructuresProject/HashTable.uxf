@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>460</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Node
+-
+# Type data;
++Node();
++Node(Type data);
++void setData (Type data);
++Type getData();
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>30</y>
+      <w>480</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>HashTable
+-
+-HashNode&lt;Type&gt; ** internalStorage;
+-long size;
+-double loadFactor;
+-long getNextPrime();
+-bool isPrime(long current);
+-void resize();
+-long findPosition(HashNode&lt;Type&gt; * insertedNode);
+-long capacity;
+-long handleCollision(HashNode&lt;Type&gt; * insertedNode, long index);
+
++Hashtable();
++~Hashtable();
++void insert(Type data);
++long getSize();
++HashNode&lt;Type&gt; * get(long index);
++bool contains(HashNode&lt;Type&gt; * value);</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>450</y>
+      <w>220</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>HashNode
+-
+-long key;
++HashNode();
++HashNode(Type data);
++Type getData();
++long getKey() const;
++void setData(Type data);
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>510</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>320</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>320</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
