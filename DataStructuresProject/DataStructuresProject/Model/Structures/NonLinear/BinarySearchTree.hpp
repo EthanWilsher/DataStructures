@@ -10,6 +10,7 @@
 #define BinarySearchTree_hpp
 
 #include "BinaryTree.hpp"
+#include "Tree.hpp"
 #include <iostream>
 
 using namespace std;
