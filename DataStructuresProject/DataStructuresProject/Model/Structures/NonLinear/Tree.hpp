@@ -14,7 +14,7 @@ template <class Type>
 class Tree
 {
 protected:
-    BinaryTreeNode<Type> * root;
+    BinaryTree<Type> * root;
 public:
     virtual int getSize() = 0;
     virtual int getHeight() = 0;
